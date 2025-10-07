@@ -18,7 +18,7 @@ function Contact() {
             </li>
             <li className="mb-2">
               <i className="bi bi-telephone-fill text-success me-2"></i>
-              +91 98765 43210
+              +91 7199045051
             </li>
             <li className="mb-2">
               <i className="bi bi-geo-alt-fill text-danger me-2"></i>
