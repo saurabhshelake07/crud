@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 function Home() {
   return (
@@ -20,9 +21,9 @@ function Home() {
           <p className="lead mt-3 mb-4">
             Manage student records, courses, and performance all in one place.
           </p>
-          <a href="/about" className="btn btn-primary btn-lg">
+          <NavLink to="/about" className="btn btn-primary btn-lg">
             Learn More
-          </a>
+          </NavLink>
         </div>
       </header>
 

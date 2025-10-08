@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 function About() {
   return (
@@ -25,9 +26,9 @@ function About() {
             <li className="list-group-item">✔ Performance and grade tracking</li>
             <li className="list-group-item">✔ Simple and user-friendly interface</li>
           </ul>
-          <a href="/contact" className="btn btn-primary btn-lg">
+          <NavLink to="/contact" className="btn btn-primary btn-lg">
             Learn More
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>
