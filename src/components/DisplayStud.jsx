@@ -6,7 +6,7 @@ function DisplayStud() {
   const[students,setStudents]=useState([])
 
   async function fetchData() {
-    const res = await axios.get("http://localhost:8000/Student")
+    const res = await axios.get("https://ca2d3d461a2e0cb78f3a.free.beeceptor.com/api/users/")
     setStudents(res.data)
     console.log("res ---> ",res.data) 
   
@@ -15,7 +15,7 @@ function DisplayStud() {
   useEffect (()=>{fetchData()} , [])
 
   async function deletechData(id) {
-    const res = await axios.delete(`http://localhost:8000/Student/${id}/`)
+    const res = await axios.delete(`https://ca2d3d461a2e0cb78f3a.free.beeceptor.com/api/users/${id}/`)
     alert("Data Deleted ...! ")
     await fetchData()
     

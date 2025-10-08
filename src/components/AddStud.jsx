@@ -9,7 +9,7 @@ function AddStud() {
     const nav = useNavigate()
     async function saveData(data) {
         try{
-            const res=await axios.post('http://localhost:8000/Student',data)
+            const res=await axios.post('https://ca2d3d461a2e0cb78f3a.free.beeceptor.com/api/users/',data)
             console.log("res -->",res)
             nav("/student/display")
         }

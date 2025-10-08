@@ -11,12 +11,12 @@ const params=useParams()
 
 
 async function updateData(data){
-  const res=await axios.put(`http://localhost:8000/Student/${params.id}/`,data)  
+  const res=await axios.put(`https://ca2d3d461a2e0cb78f3a.free.beeceptor.com/api/users/${params.id}/`,data)  
   nav('/student/display')   
 }
 
 async function fetchData() {
-  const res=await axios.get(`http://localhost:8000/Student/${params.id}/`)
+  const res=await axios.get(`https://ca2d3d461a2e0cb78f3a.free.beeceptor.com/api/users/${params.id}/`)
   setValue('roll',res.data.roll)
   setValue('name',res.data.name)
   setValue('marks',res.data.marks) 
